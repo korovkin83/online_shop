@@ -70,7 +70,7 @@ if (isset($_POST['btn_add'] ) ) {
   $info = $_POST['info'];
   $img = $_POST['img'];
 
-   mysqli_query($link, "INSERT INTO tovars(name,info,price) VALUES ('$name', '$info', '$price')");
+   mysqli_query($link, "INSERT INTO tovars(name,info,price,logo) VALUES ('$name', '$info', '$price','$img')");
    exit('<center>Товар успешно добавлен!</center>');
 }
 
@@ -94,7 +94,7 @@ if (isset($_POST['btn_add'] ) ) {
     <br><br>
     <textarea placeholder='описание' name='info' rows='10' cols='70'>%s</textarea>
     <br><br>
-    <input type='submit' name='btn_add' value='Изменить'>
+    Я забыл!) Удали и добавль заново!!.
     </form>
     <center>
     ", $row['name'], $row['price'], $row['id'], $row['info']);
